@@ -1338,3 +1338,7 @@ ij_json_wrap_long_lines = false
 
 [{messages.*,spring.schemas,spring.handlers,messages,*.properties}]
 ij_properties_align_group_field_declarations = false
+
+[*.{js,jsx,mjs,cjs,ts,tsx,mts,cts,vue,css,scss,sass,less,styl}]
+insert_final_newline = true
+trim_trailing_whitespace = true
