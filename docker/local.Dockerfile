@@ -1,11 +1,11 @@
 # Build Stage
-FROM node:20-alpine AS builder
+FROM node:20-bookworm AS builder
 
 WORKDIR /build
 
-COPY package*.json ./
+COPY package.json ./
 
-RUN npm ci --silent
+RUN npm install
 
 COPY . .
 
